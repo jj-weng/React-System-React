@@ -1,0 +1,31 @@
+export const USER_LOGINED = 'USER_LOGINED';
+export const USER_FAILEDLOGIN = 'USER_FAILEDLOGIN';
+export const LOGOUT = 'LOGOUT';
+export const USER_REGISTER = 'USER_REGISTER';
+export const USER_FAILEDREGISTER = 'USER_FAILEDREGISTER';
+export const GET_ALL_FORUMS = 'GET_ALL_FORUMS';
+export const ERROR_FORUM = 'ERROR_FORUM';
+export const ERROR_THREAD = 'ERROR_THREAD';
+export const ERROR_USER = 'ERROR_USER';
+export const ERROR_POST = 'ERROR_POST';
+export const GET_FORUM = 'GET_FORUM';
+export const GET_THREAD = 'GET_THREAD';
+export const GET_POST = 'GET_POST';
+export const GET_ALL_USERS = 'GET_ALL_USERS';
+export const CREATE_FORUM = 'CREATE_FORUM';
+export const CREATE_THREAD = 'CREATE_THREAD';
+export const CREATE_POST = 'CREATE_POST';
+export const EDIT_FORUM = 'EDIT_FORUM';
+export const EDIT_THREAD = 'EDIT_THREAD';
+export const EDIT_POST = 'EDIT_POST';
+export const EDIT_USER = 'EDIT_USER';
+export const DELETE_FORUM = 'DELETE_FORUM';
+export const DELETE_THREAD = 'DELETE_THREAD';
+export const DELETE_POST = 'DELETE_POST';
+export const REFRESH = 'REFRESH';
+export const BLOCK_USER = 'BLOCK_USER';
+export const UNBLOCK_USER = 'UNBLOCK_USER';
+export const CLOSE_THREAD = 'CLOSE_THREAD';
+export const OPEN_THREAD = 'OPEN_THREAD';
+
+
