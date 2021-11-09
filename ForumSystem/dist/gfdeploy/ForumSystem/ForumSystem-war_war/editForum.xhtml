@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="layout/loggedInUser.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="title">
+        Edit Forum
+    </ui:define>
+
+    <ui:define name="content">
+        <h:form id="form">
+            <p:growl showDetail="true">
+                <p:autoUpdate>
+                </p:autoUpdate>
+            </p:growl>
+            <p:panelGrid columns="2">
+                <f:facet name="header">
+                    Edit Forum
+                </f:facet>
+                <h:outputLabel for="title">Title: </h:outputLabel>
+                <p:inputText id="title" value="#{forumManagedBean.title}"
+                             required="true"
+                             requiredMessage="Title is required" />
+                <h:outputLabel for="description">Description: </h:outputLabel>
+                <p:inputText id="description" value="#{forumManagedBean.description}"
+                             required="true"
+                             requiredMessage="Description is required" />
+                <h:outputLabel for="body">Body: </h:outputLabel>
+                <p:inputText id="body" value="#{forumManagedBean.body}"
+                             required="true"
+                             requiredMessage="Body is required" />
+
+            </p:panelGrid>
+            <p:commandButton value="Confirm Edit"
+                             actionListener="#{forumManagedBean.editForum}"
+                             action="homepage.xhtml?faces-redirect=true"
+                             update=":form"/>
+        </h:form>
+    </ui:define>
+</ui:composition>
